@@ -44,7 +44,7 @@ public class Ex04 {
 		int point=sc.nextInt();
 		double rest=point%3;
 		
-		if(rest==0) {
+		if(rest==0) { //변수 넣을 필요없고 바로 if(point%3==0) 해도 됨.
 			System.out.println(point+"은(는) 3의 배수입니다.");
 		}else {
 			System.out.println(point+"은(는) 3의 배수가 아닙니다.");
