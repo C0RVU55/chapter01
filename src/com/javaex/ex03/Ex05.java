@@ -59,7 +59,7 @@ public class Ex05 {
 		//예제6
 		System.out.print("과목을 선택하세요\n(1.자바 2.C 3.C++ 4.파이썬)\n과목변호: ");
 		int subject=sc.nextInt();
-		
+		/*
 		if(subject==1) {
 			System.out.println("R101호");
 		}else if(subject==2) {
@@ -71,7 +71,30 @@ public class Ex05 {
 		}else {
 			System.out.println("상담원에게 문의하세요.");
 		}
+		*/
 		
+		//예제6 : 모든 조건이 ==일때 switch-case문 사용 가능.
+		switch(subject) {
+			case 1: //변수값이 1과 같으면 < case값을 "A" 이렇게 문자로도 대입 가능.
+				System.out.println("R101호");
+				break;
+			
+			case 2:
+				System.out.println("R202호");
+				break;
+				
+			case 3:
+				System.out.println("R303호");
+				break;
+				
+			case 4:
+				System.out.println("R404호");
+				break;
+				
+			default:
+				System.out.println("상담원에서 문의하세요.");
+				break;
+		}
 		
 		
 		sc.close();
