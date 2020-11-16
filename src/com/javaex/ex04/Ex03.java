@@ -29,8 +29,9 @@ public class Ex03 {
 			}
 		}
 		
-		//3. 중첩반복문 : 별
-		for(int ss=1; ss<=6; ss++) {
+		//3. 중첩반복문 : 별1
+		for(int ss=1; ss<=6; ss++) { 
+			//처음에 String s="*"나 char로 했는데 아니었음. 하긴 문자에 숫자 더하기 개념을 어떻게 적용하겠음...
 			for(int s=1; s<=6; s++) {
 				System.out.print("*");
 			}
