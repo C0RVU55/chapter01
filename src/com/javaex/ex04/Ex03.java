@@ -32,15 +32,15 @@ public class Ex03 {
 		//3. 중첩반복문 : 별1
 		for(int ss=1; ss<=6; ss++) { 
 			//처음에 String s="*"나 char로 했는데 아니었음. 하긴 문자에 숫자 더하기 개념을 어떻게 적용하겠음...
-			for(int s=1; s<=6; s++) {
+			for(int s=1; s<=6; s++) { //s=0; s<6 | 순서 파악할 때 x, y 좌표로 파악할 수 있음. x먼저 돌고 y 돎.
 				System.out.print("*");
 			}
 			System.out.println("");
 		}
 		
-		//4. 중첩반복문 : 별2
+		//4. 중첩반복문 : 별2 //y가 1번째 줄이면 x도 1개, 2번째 줄이면 x도 2개...이런 식으로 볼 수도 있음.
 		for(int vv=1; vv<=6; vv++) {
-			for(int v=0; v<vv; v++) {
+			for(int v=1; v<=vv; v++) { //**y줄 번수 만큼 x축으로 실행.**
 				System.out.print("*");
 			}
 			System.out.println("");
